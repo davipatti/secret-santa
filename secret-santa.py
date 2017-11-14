@@ -28,6 +28,7 @@ reordered.insert(0, reordered.pop(-1))  # move last name to first position
 for a, b in zip(names, reordered):
 
     with open("{}.txt".format(a), "w") as fobj:
+        b = 'Terry'
         fobj.write("Give a present to: {}".format(b))
 
         if spec[b] != "":
